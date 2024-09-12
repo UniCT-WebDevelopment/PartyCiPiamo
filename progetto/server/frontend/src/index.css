@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.eventDetail {
+  width: 500px !important;
+  height: 400px !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.eventDetail img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  background-color: #444;
+}
+
+.event-details {
+  width: 100%;
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+.navbar-brand img {
+  z-index: 10;
+}
+
+.fullpage {
+  background-color: #444;
+  min-height: 100vh;
+}
+
+textarea.inserisciCommento {
+  min-height: 100px !important;
+  max-height: 100px !important;
+  resize: none;
+  /* background-color: #313030; */
+}
+
+.comment a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.comment a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: darkmagenta !important;
+}
+
+
+.dropdown-menu-mine {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.dropdown-menu-mine .dropdown-item-mine:hover {
+  background-color: lightgray;
+}
+
+.dropdown-menu-mine .dropdown-item-mine:active {
+  background-color: lightgray;
+
+}
+
+.defaultImage {
+  width: 70% !important;
+}
+
+.bg-black {
+  background-color: #313030 !important;
+}
+
+/* Stile della scrollbar per Webkit */
+.event-details::-webkit-scrollbar {
+  width: 12px;
+  /* Larghezza della scrollbar */
+}
+
+.event-details::-webkit-scrollbar-track {
+  background: #333;
+  /* Colore dello sfondo della track */
+}
+
+.event-details::-webkit-scrollbar-thumb {
+  background: #000;
+  /* Colore della parte mobile della scrollbar */
+  border-radius: 6px;
+  /* Arrotondamento degli angoli */
+}
+
+.event-details::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Colore della parte mobile quando viene hoverata */
+}
+
+.loader {
+  border: 16px solid #e2a9a9; /* Light grey */
+  border-top: 16px solid #444; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

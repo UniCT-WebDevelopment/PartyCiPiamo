@@ -1,0 +1,4 @@
+progetto/server/node_modules
+progetto/server/frontend/node_modules
+progetto/server/uploads
+.env
